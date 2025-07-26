@@ -35,7 +35,9 @@ describe('SEOConfig', () => {
 
   it('should have correct project information', () => {
     expect(SEOConfig.project.name).toBe('Boilerplate Aqua9');
-    expect(SEOConfig.project.description).toContain('Boilerplate Next.js profissional');
+    expect(SEOConfig.project.description).toContain(
+      'Boilerplate Next.js profissional'
+    );
     expect(SEOConfig.project.version).toBe('1.0.0');
     expect(SEOConfig.project.url).toBe('https://aqua9.com.br');
   });
@@ -63,14 +65,22 @@ describe('generateDynamicSEO', () => {
 
     expect(metadata.title).toBe('Boilerplate Aqua9 - Next.js Profissional');
     expect(metadata.description).toContain('Boilerplate Next.js profissional');
-    expect(metadata.keywords).toEqual(['boilerplate', 'nextjs', 'react', 'typescript', 'aqua9']);
+    expect(metadata.keywords).toEqual([
+      'boilerplate',
+      'nextjs',
+      'react',
+      'typescript',
+      'aqua9',
+    ]);
   });
 
   it('should generate SEO for about page', () => {
     const metadata = generateDynamicSEO('/about');
 
     expect(metadata.title).toBe('Sobre - Boilerplate Aqua9');
-    expect(metadata.description).toContain('Conheça mais sobre o Boilerplate Aqua9');
+    expect(metadata.description).toContain(
+      'Conheça mais sobre o Boilerplate Aqua9'
+    );
     expect(metadata.alternates?.canonical).toBe('https://aqua9.com.br/about');
   });
 
@@ -79,7 +89,9 @@ describe('generateDynamicSEO', () => {
 
     expect(metadata.title).toBe('Portfólio - Boilerplate Aqua9');
     expect(metadata.description).toContain('Portfólio de projetos');
-    expect(metadata.alternates?.canonical).toBe('https://aqua9.com.br/portfolio');
+    expect(metadata.alternates?.canonical).toBe(
+      'https://aqua9.com.br/portfolio'
+    );
   });
 
   it('should fallback to default SEO for unknown routes', () => {
@@ -93,8 +105,12 @@ describe('generateDynamicSEO', () => {
     const metadata = generateDynamicSEO('/');
 
     expect(metadata.openGraph).toBeDefined();
-    expect(metadata.openGraph?.title).toBe('Boilerplate Aqua9 - Next.js Profissional');
-    expect(metadata.openGraph?.description).toContain('Boilerplate Next.js profissional');
+    expect(metadata.openGraph?.title).toBe(
+      'Boilerplate Aqua9 - Next.js Profissional'
+    );
+    expect(metadata.openGraph?.description).toContain(
+      'Boilerplate Next.js profissional'
+    );
     expect(metadata.openGraph?.url).toBe('https://aqua9.com.br');
   });
 
@@ -102,8 +118,12 @@ describe('generateDynamicSEO', () => {
     const metadata = generateDynamicSEO('/');
 
     expect(metadata.twitter).toBeDefined();
-    expect(metadata.twitter?.title).toBe('Boilerplate Aqua9 - Next.js Profissional');
-    expect(metadata.twitter?.description).toContain('Boilerplate Next.js profissional');
+    expect(metadata.twitter?.title).toBe(
+      'Boilerplate Aqua9 - Next.js Profissional'
+    );
+    expect(metadata.twitter?.description).toContain(
+      'Boilerplate Next.js profissional'
+    );
   });
 });
 
@@ -137,7 +157,12 @@ describe('generatePageSEO', () => {
 
   it('should generate page SEO with custom image', () => {
     const customImage = '/custom-image.jpg';
-    const metadata = generatePageSEO('Test Page', undefined, undefined, customImage);
+    const metadata = generatePageSEO(
+      'Test Page',
+      undefined,
+      undefined,
+      customImage
+    );
 
     expect(metadata.title).toBe('Test Page');
     expect(metadata.openGraph?.images).toEqual([
@@ -228,7 +253,9 @@ describe('useDynamicSEO', () => {
 describe('routeSEOConfig', () => {
   it('should have home page configuration', () => {
     expect(routeSEOConfig['/']).toBeDefined();
-    expect(routeSEOConfig['/'].title).toBe('Boilerplate Aqua9 - Next.js Profissional');
+    expect(routeSEOConfig['/'].title).toBe(
+      'Boilerplate Aqua9 - Next.js Profissional'
+    );
   });
 
   it('should have about page configuration', () => {
@@ -238,16 +265,20 @@ describe('routeSEOConfig', () => {
 
   it('should have portfolio page configuration', () => {
     expect(routeSEOConfig['/portfolio']).toBeDefined();
-    expect(routeSEOConfig['/portfolio'].title).toBe('Portfólio - Boilerplate Aqua9');
+    expect(routeSEOConfig['/portfolio'].title).toBe(
+      'Portfólio - Boilerplate Aqua9'
+    );
   });
 
   it('should have dynamic portfolio configuration', () => {
     expect(routeSEOConfig['/portfolio/[slug]']).toBeDefined();
-    expect(routeSEOConfig['/portfolio/[slug]'].title).toBe('Projeto {slug} - Boilerplate Aqua9');
+    expect(routeSEOConfig['/portfolio/[slug]'].title).toBe(
+      'Projeto {slug} - Boilerplate Aqua9'
+    );
   });
 
   it('should have canonical URLs for all routes', () => {
-    Object.values(routeSEOConfig).forEach((config) => {
+    Object.values(routeSEOConfig).forEach(config => {
       expect(config.canonical).toContain('https://aqua9.com.br');
     });
   });
@@ -258,9 +289,13 @@ describe('routeSEOConfig', () => {
  */
 describe('jsonLdConfig', () => {
   it('should have software application schema', () => {
-    expect(jsonLdConfig.softwareApplication['@type']).toBe('SoftwareApplication');
+    expect(jsonLdConfig.softwareApplication['@type']).toBe(
+      'SoftwareApplication'
+    );
     expect(jsonLdConfig.softwareApplication.name).toBe('Boilerplate Aqua9');
-    expect(jsonLdConfig.softwareApplication.description).toContain('Boilerplate Next.js profissional');
+    expect(jsonLdConfig.softwareApplication.description).toContain(
+      'Boilerplate Next.js profissional'
+    );
   });
 
   it('should have organization schema', () => {
@@ -276,7 +311,9 @@ describe('jsonLdConfig', () => {
   });
 
   it('should have valid JSON-LD structure', () => {
-    expect(jsonLdConfig.softwareApplication['@context']).toBe('https://schema.org');
+    expect(jsonLdConfig.softwareApplication['@context']).toBe(
+      'https://schema.org'
+    );
     expect(jsonLdConfig.organization['@context']).toBe('https://schema.org');
     expect(jsonLdConfig.person['@context']).toBe('https://schema.org');
   });
@@ -303,7 +340,9 @@ describe('sitemapConfig', () => {
   });
 
   it('should have about page in static pages', () => {
-    const aboutPage = sitemapConfig.staticPages.find(page => page.url === '/about');
+    const aboutPage = sitemapConfig.staticPages.find(
+      page => page.url === '/about'
+    );
     expect(aboutPage).toBeDefined();
     expect(aboutPage?.changeFrequency).toBe('monthly');
     expect(aboutPage?.priority).toBe(0.8);

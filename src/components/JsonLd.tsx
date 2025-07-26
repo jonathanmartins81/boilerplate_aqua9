@@ -1,37 +1,8 @@
-/**
- * Componente JsonLd - Structured Data para SEO
- *
- * Este componente adiciona dados estruturados JSON-LD ao HTML
- * para melhorar a compreensão dos motores de busca sobre o conteúdo.
- *
- * Funcionalidades:
- * - Schema para SoftwareApplication (aplicação)
- * - Schema para Organization (empresa Aqua9)
- * - Schema para Person (Jonathan Simão)
- * - Schema para BreadcrumbList (navegação)
- * - Schema para WebSite (site)
- *
- * Benefícios:
- * - Melhor indexação nos motores de busca
- * - Rich snippets nos resultados de busca
- * - Compreensão do contexto da aplicação
- * - Melhor SEO técnico
- */
-
 import { jsonLdConfig } from '@/utils/SEO';
 
-/**
- * Componente JsonLd
- *
- * Renderiza múltiplos scripts JSON-LD com dados estruturados
- * para diferentes entidades relacionadas ao projeto.
- *
- * @returns Scripts JSON-LD para SEO
- */
 export function JsonLd() {
   return (
     <>
-      {/* Schema para SoftwareApplication - Descreve a aplicação */}
       <script
         type='application/ld+json'
         dangerouslySetInnerHTML={{
@@ -39,7 +10,6 @@ export function JsonLd() {
         }}
       />
 
-      {/* Schema para Organization - Descreve a empresa Aqua9 */}
       <script
         type='application/ld+json'
         dangerouslySetInnerHTML={{
@@ -47,7 +17,6 @@ export function JsonLd() {
         }}
       />
 
-      {/* Schema para Person - Descreve Jonathan Simão */}
       <script
         type='application/ld+json'
         dangerouslySetInnerHTML={{
@@ -55,7 +24,6 @@ export function JsonLd() {
         }}
       />
 
-      {/* Schema para BreadcrumbList - Navegação do site */}
       <script
         type='application/ld+json'
         dangerouslySetInnerHTML={{
@@ -80,7 +48,6 @@ export function JsonLd() {
         }}
       />
 
-      {/* Schema para WebSite - Informações do site */}
       <script
         type='application/ld+json'
         dangerouslySetInnerHTML={{

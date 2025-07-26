@@ -1,34 +1,6 @@
-/**
- * Configuração SEO Dinâmica para o Boilerplate Aqua9
- *
- * Este arquivo centraliza todas as configurações de SEO da aplicação.
- * Define metadados, structured data, sitemap e configurações para motores de busca.
- *
- * Funcionalidades:
- * - Metadados padrão para todas as páginas
- * - SEO dinâmico por rota
- * - Configuração de Open Graph (Facebook, LinkedIn)
- * - Configuração do Twitter Card
- * - Structured Data (JSON-LD)
- * - Configuração de sitemap dinâmico
- * - Configuração de robots.txt
- * - Geração automática de metadados
- *
- * Desenvolvedor: Jonathan Simão
- * Site: aqua9.com.br
- * Nome: boilerplate_aqua9
- */
-
 import type { Metadata } from 'next';
 
-/**
- * Configurações básicas do projeto
- *
- * Contém informações do desenvolvedor, projeto e palavras-chave
- * utilizadas para SEO e descoberta do projeto.
- */
 export const SEOConfig = {
-  // Informações do desenvolvedor
   developer: {
     name: 'Jonathan Simão',
     email: 'contato@aqua9.com.br',
@@ -36,7 +8,6 @@ export const SEOConfig = {
     twitter: '@aqua9dev',
   },
 
-  // Informações do projeto
   project: {
     name: 'Boilerplate Aqua9',
     description:
@@ -46,7 +17,6 @@ export const SEOConfig = {
     repository: 'https://github.com/aqua9/boilerplate_aqua9',
   },
 
-  // Palavras-chave para SEO - Otimizadas para descoberta do projeto
   keywords: [
     'boilerplate',
     'nextjs',
@@ -72,48 +42,31 @@ export const SEOConfig = {
     'sentry',
   ],
 
-  // Configurações de cores para tema
   theme: {
-    primary: '#1e3a8a', // blue-950
-    secondary: '#3b82f6', // blue-500
-    accent: '#60a5fa', // blue-400
+    primary: '#1e3a8a',
+    secondary: '#3b82f6',
+    accent: '#60a5fa',
   },
 };
 
-/**
- * Interface para configuração de SEO dinâmico
- */
 export interface DynamicSEOConfig {
-  /** Título da página */
   title: string;
-  /** Descrição da página */
   description?: string;
-  /** Palavras-chave específicas da página */
   keywords?: string[];
-  /** Imagem específica da página */
   image?: string;
-  /** URL canônica da página */
   canonical?: string;
-  /** Tipo de conteúdo (article, website, etc.) */
   type?: 'website' | 'article' | 'product' | 'profile';
-  /** Autor específico da página */
   author?: string;
-  /** Data de publicação (para artigos) */
   publishedTime?: string;
-  /** Data de modificação */
   modifiedTime?: string;
-  /** Seção do site */
   section?: string;
-  /** Tags específicas */
   tags?: string[];
-  /** Configurações específicas do Open Graph */
   openGraph?: {
     title?: string;
     description?: string;
     image?: string;
     type?: 'website' | 'article' | 'product' | 'profile';
   };
-  /** Configurações específicas do Twitter */
   twitter?: {
     title?: string;
     description?: string;

@@ -1,61 +1,80 @@
-/**
- * Componente Main - Página Inicial
- *
- * Este é o componente principal que renderiza toda a interface da página inicial.
- * Contém o logo, título, descrição e ilustração da Aqua9.
- *
- * Funcionalidades:
- * - Exibe o logo da Aqua9
- * - Mostra o título "Boilerplate Aqua9"
- * - Apresenta descrição das tecnologias
- * - Renderiza ilustração decorativa
- * - Interface responsiva e acessível
- */
+import styled from 'styled-components';
 
-import * as S from './styles';
-
-/**
- * Interface para as props do componente Main
- */
 interface MainProps {
-  /** Título principal da página (padrão: "Boilerplate Aqua9") */
   title?: string;
-  /** Descrição das tecnologias utilizadas */
   description?: string;
+  technologies?: string[];
 }
 
-/**
- * Componente Main
- *
- * Renderiza a interface principal da página inicial com logo, título e descrição.
- *
- * @param title - Título da página (opcional, tem valor padrão)
- * @param description - Descrição das tecnologias (opcional, tem valor padrão)
- * @returns Interface completa da página inicial
- */
-const Main = ({
+export function Main({
   title = 'Boilerplate Aqua9',
-  description = 'TypeScript, ReactJS, NextJS e Styled Components',
-}: MainProps) => (
-  <S.Wrapper>
-    {/* Logo da Aqua9 */}
-    <S.Logo
-      src='/img/logo.svg'
-      alt='Logo da Aqua9 - Imagem de um átomo e React Avançado escrito ao lado.'
-    />
+  description = 'Template Next.js profissional com TypeScript, Tailwind CSS e SEO otimizado',
+  technologies = ['Next.js', 'React', 'TypeScript', 'Tailwind CSS'],
+}: MainProps) {
+  return (
+    <MainContainer>
+      <Logo src='/img/logo.svg' alt='Aqua9 Logo' />
+      <Title>{title}</Title>
+      <Description>{description}</Description>
+      <TechnologiesList>
+        {technologies.map((tech, index) => (
+          <Technology key={index}>{tech}</Technology>
+        ))}
+      </TechnologiesList>
+      <Illustration src='/img/hero-illustration.svg' alt='Hero Illustration' />
+    </MainContainer>
+  );
+}
 
-    {/* Título principal da página */}
-    <S.Title>{title}</S.Title>
+const MainContainer = styled.main`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+  text-align: center;
+`;
 
-    {/* Descrição das tecnologias utilizadas */}
-    <S.Description>{description}</S.Description>
+const Logo = styled.img`
+  width: 120px;
+  height: auto;
+  margin-bottom: 2rem;
+`;
 
-    {/* Ilustração decorativa */}
-    <S.Illustration
-      src='/img/hero-illustration.svg'
-      alt='Um desenvolvedor de frente para uma tela com código.'
-    />
-  </S.Wrapper>
-);
+const Title = styled.h1`
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #ffffff;
+`;
 
-export default Main;
+const Description = styled.p`
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #e5e7eb;
+  max-width: 600px;
+`;
+
+const TechnologiesList = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+`;
+
+const Technology = styled.span`
+  background: rgba(59, 130, 246, 0.2);
+  color: #60a5fa;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  border: 1px solid rgba(59, 130, 246, 0.3);
+`;
+
+const Illustration = styled.img`
+  width: 300px;
+  height: auto;
+  opacity: 0.8;
+`;

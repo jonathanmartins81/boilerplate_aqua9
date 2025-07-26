@@ -11,6 +11,7 @@ O Boilerplate Aqua9 implementa um sistema completo de hooks Git para garantir qu
 **Arquivo:** `.husky/pre-commit`
 
 **Funcionalidades:**
+
 - ✅ Formatação automática com Prettier
 - ✅ Linting com ESLint
 - ✅ Verificação de tipos TypeScript
@@ -18,6 +19,7 @@ O Boilerplate Aqua9 implementa um sistema completo de hooks Git para garantir qu
 - ✅ Verificação de qualidade básica
 
 **Execução:**
+
 ```bash
 # Executado automaticamente antes de cada commit
 git commit -m "feat: nova funcionalidade"
@@ -28,6 +30,7 @@ git commit -m "feat: nova funcionalidade"
 **Arquivo:** `lefthook.yml`
 
 **Funcionalidades:**
+
 - ✅ Formatação paralela com Prettier
 - ✅ Linting paralelo com ESLint
 - ✅ Verificação de tipos TypeScript
@@ -37,6 +40,7 @@ git commit -m "feat: nova funcionalidade"
 ### **3. Pre-push Hook (Lefthook)**
 
 **Funcionalidades:**
+
 - ✅ Verificação completa de qualidade
 - ✅ Execução completa de testes
 - ✅ Build de produção
@@ -45,12 +49,14 @@ git commit -m "feat: nova funcionalidade"
 ### **4. Post-commit Hook (Lefthook)**
 
 **Funcionalidades:**
+
 - ✅ Relatório de qualidade
 - ✅ Confirmação de sucesso
 
 ### **5. Post-merge Hook (Lefthook)**
 
 **Funcionalidades:**
+
 - ✅ Instalação automática de dependências
 - ✅ Verificação de funcionamento
 
@@ -68,20 +74,13 @@ module.exports = {
   ],
 
   // Arquivos de configuração
-  '*.{json,md,yml,yaml}': [
-    'prettier --write',
-  ],
+  '*.{json,md,yml,yaml}': ['prettier --write'],
 
   // Arquivos CSS
-  '*.{css,scss}': [
-    'prettier --write',
-  ],
+  '*.{css,scss}': ['prettier --write'],
 
   // Verificação final
-  '*': [
-    () => 'npm run type-check',
-    () => 'npm run check-deps',
-  ],
+  '*': [() => 'npm run type-check', () => 'npm run check-deps'],
 };
 ```
 
@@ -114,17 +113,17 @@ pre-push:
 
 ### **Scripts Disponíveis:**
 
-| Script | Comando | Descrição |
-|--------|---------|-----------|
-| `npm run quality` | `npm run lint && npm run format:check && npm run type-check` | Verificação básica de qualidade |
-| `npm run quality:full` | `npm run quality && npm run check-deps && npm run test:ci` | Verificação completa de qualidade |
-| `npm run lint` | `next lint` | Linting com ESLint |
-| `npm run lint:fix` | `next lint --fix` | Linting com correção automática |
-| `npm run format` | `prettier --write .` | Formatação com Prettier |
-| `npm run format:check` | `prettier --check .` | Verificação de formatação |
-| `npm run type-check` | `tsc --noEmit` | Verificação de tipos TypeScript |
-| `npm run check-deps` | `knip` | Verificação de dependências não utilizadas |
-| `npm run test:ci` | `jest --runInBand` | Testes em modo CI |
+| Script                 | Comando                                                      | Descrição                                  |
+| ---------------------- | ------------------------------------------------------------ | ------------------------------------------ |
+| `npm run quality`      | `npm run lint && npm run format:check && npm run type-check` | Verificação básica de qualidade            |
+| `npm run quality:full` | `npm run quality && npm run check-deps && npm run test:ci`   | Verificação completa de qualidade          |
+| `npm run lint`         | `next lint`                                                  | Linting com ESLint                         |
+| `npm run lint:fix`     | `next lint --fix`                                            | Linting com correção automática            |
+| `npm run format`       | `prettier --write .`                                         | Formatação com Prettier                    |
+| `npm run format:check` | `prettier --check .`                                         | Verificação de formatação                  |
+| `npm run type-check`   | `tsc --noEmit`                                               | Verificação de tipos TypeScript            |
+| `npm run check-deps`   | `knip`                                                       | Verificação de dependências não utilizadas |
+| `npm run test:ci`      | `jest --runInBand`                                           | Testes em modo CI                          |
 
 ## 🔄 **Fluxo de Trabalho**
 
@@ -169,15 +168,18 @@ git pull origin main
 ## ⚡ **Performance e Otimizações**
 
 ### **Execução Paralela:**
+
 - **Pre-commit**: Comandos executados em paralelo para velocidade
 - **Pre-push**: Comandos executados sequencialmente para confiabilidade
 
 ### **Execução Seletiva:**
+
 - **Lint Staged**: Apenas arquivos alterados são processados
 - **Testes**: Apenas testes relacionados aos arquivos alterados
 - **Formatação**: Apenas arquivos relevantes são formatados
 
 ### **Cache e Otimizações:**
+
 - **TypeScript**: Cache de compilação
 - **Jest**: Cache de testes
 - **ESLint**: Cache de linting
@@ -185,11 +187,13 @@ git pull origin main
 ## 🚨 **Tratamento de Erros**
 
 ### **Erros no Pre-commit:**
+
 - ❌ Commit é bloqueado
 - 🔍 Erro é exibido com detalhes
 - 🛠️ Sugestões de correção são fornecidas
 
 ### **Erros no Pre-push:**
+
 - ❌ Push é bloqueado
 - 🔍 Erro é exibido com detalhes
 - 🛠️ Comandos de correção são sugeridos
@@ -245,16 +249,19 @@ ls -la .git/hooks/
 ## 📈 **Métricas de Qualidade**
 
 ### **Cobertura de Testes:**
+
 - **Componentes**: 100% de cobertura
 - **Utilitários**: 100% de cobertura
 - **Total**: 6.03% (em crescimento)
 
 ### **Qualidade de Código:**
+
 - **ESLint**: 0 erros, 0 warnings
 - **TypeScript**: 0 erros de tipo
 - **Prettier**: 100% de arquivos formatados
 
 ### **Dependências:**
+
 - **Vulnerabilidades**: 0 encontradas
 - **Dependências não utilizadas**: Monitoradas
 - **Versões**: Sempre atualizadas
@@ -262,18 +269,21 @@ ls -la .git/hooks/
 ## 🎯 **Benefícios**
 
 ### **Para Desenvolvedores:**
+
 - 🚀 **Velocidade**: Hooks otimizados para desenvolvimento
 - 🔍 **Detecção Precoce**: Erros encontrados antes do commit
 - 🛠️ **Correção Automática**: Muitos problemas corrigidos automaticamente
 - 📚 **Documentação**: Código sempre documentado
 
 ### **Para o Projeto:**
+
 - 🏗️ **Consistência**: Código sempre padronizado
 - 🔒 **Segurança**: Vulnerabilidades detectadas automaticamente
 - 📈 **Qualidade**: Padrões sempre mantidos
 - 🚀 **Performance**: Builds otimizados
 
 ### **Para a Equipe:**
+
 - 👥 **Colaboração**: Código sempre pronto para review
 - 🔄 **Integração**: Menos conflitos de merge
 - 📊 **Visibilidade**: Métricas de qualidade sempre disponíveis
@@ -282,6 +292,7 @@ ls -la .git/hooks/
 ## 🔮 **Próximos Passos**
 
 ### **Melhorias Futuras:**
+
 - [ ] Integração com análise de código estático
 - [ ] Relatórios de qualidade automatizados
 - [ ] Integração com CI/CD
@@ -296,4 +307,4 @@ ls -la .git/hooks/
 
 ---
 
-*Este documento descreve o sistema completo de hooks de qualidade implementado no Boilerplate Aqua9, garantindo que todo código seja de alta qualidade antes de chegar ao repositório.*
+_Este documento descreve o sistema completo de hooks de qualidade implementado no Boilerplate Aqua9, garantindo que todo código seja de alta qualidade antes de chegar ao repositório._

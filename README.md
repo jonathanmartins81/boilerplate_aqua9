@@ -1,394 +1,394 @@
-# 🚀 Boilerplate Aqua9 - Next.js Profissional
+# 🚀 Aqua9 Boilerplate - Professional Next.js
 
 <div align="center">
 
 ![Aqua9 Logo](public/img/logo-gh.svg)
 
-**Template Next.js moderno e otimizado para projetos profissionais da Aqua9**
+**Modern Next.js template optimized for professional projects by Aqua9**
 
 [![Build Status](https://github.com/aqua9/boilerplate_aqua9/workflows/ci/badge.svg)](https://github.com/aqua9/boilerplate_aqua9/actions)
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white)](https://nextjs.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 
-**Desenvolvido por**: [Jonathan Simão](https://aqua9.com.br)
-**Site**: [aqua9.com.br](https://aqua9.com.br)
-**Versão**: 1.0.0
+**Developed by**: [Jonathan Simão](https://aqua9.com.br)
+**Website**: [aqua9.com.br](https://aqua9.com.br)
+**Version**: 1.0.0
 
 </div>
 
 ---
 
-## 📋 Sobre o Projeto
+## 📋 About the Project
 
-Este é um boilerplate Next.js profissional desenvolvido pela **Aqua9** para acelerar o desenvolvimento de projetos web modernos. O template inclui as melhores práticas de desenvolvimento, ferramentas de qualidade de código, testes automatizados e configurações otimizadas para produção.
+This is a professional Next.js boilerplate developed by **Aqua9** to accelerate the creation of modern web projects. The template includes best development practices, code quality tools, automated testing, and optimized production settings.
 
-### ✨ **Características Principais**
+### ✨ **Main Features**
 
-- ⚡ **Performance otimizada** com Next.js 15 e App Router
-- 🎨 **Design system** com Tailwind CSS 4
-- 🔒 **Segurança robusta** com Arcjet e validações
-- 📊 **Analytics completo** com PostHog e Sentry
-- 🧪 **Testes automatizados** com Vitest e Playwright
-- 📚 **Documentação** com Storybook
-- 🚀 **Deploy ready** para Vercel e outras plataformas
-- 🎯 **Qualidade de código** automatizada e padronizada
+- ⚡ **Optimized performance** with Next.js 15 and App Router
+- 🎨 **Design system** using Tailwind CSS 4
+- 🔒 **Robust security** with Arcjet and validations
+- 📊 **Complete analytics** with PostHog and Sentry
+- 🧪 **Automated testing** with Vitest and Playwright
+- 📚 **Documentation** via Storybook
+- 🚀 **Deploy ready** for Vercel and other platforms
+- 🎯 **Automated, standardized code quality**
 
-## 🛠️ Stack Tecnológica
+## 🛠️ Technology Stack
 
-Este projeto utiliza uma stack moderna e robusta, cuidadosamente selecionada para garantir qualidade, performance e escalabilidade.
+This project uses a modern, robust stack, carefully selected for quality, performance and scalability.
 
 ### **🎯 Core Framework**
 
-| Tecnologia                                    | Versão | Descrição                             |
-| --------------------------------------------- | ------ | ------------------------------------- |
-| [Next.js](https://nextjs.org/)                | 15.x   | Framework React com App Router e SSR  |
-| [React](https://reactjs.org/)                 | 18.x   | Biblioteca JavaScript para interfaces |
-| [TypeScript](https://www.typescriptlang.org/) | 5.x    | Tipagem estática para JavaScript      |
-| [Tailwind CSS](https://tailwindcss.com/)      | 4.x    | Framework CSS utility-first           |
+| Technology                                    | Version | Description                                |
+| --------------------------------------------- | ------- | ------------------------------------------ |
+| [Next.js](https://nextjs.org/)                | 15.x    | React framework with App Router and SSR    |
+| [React](https://reactjs.org/)                 | 18.x    | JavaScript library for UIs                 |
+| [TypeScript](https://www.typescriptlang.org/) | 5.x     | Static typing for JavaScript               |
+| [Tailwind CSS](https://tailwindcss.com/)      | 4.x     | Utility-first CSS framework                |
 
-### **🔧 Desenvolvimento & Qualidade**
+### **🔧 Development & Quality**
 
-| Ferramenta                                           | Propósito                  | Configuração             |
-| ---------------------------------------------------- | -------------------------- | ------------------------ |
-| [ESLint](https://eslint.org/)                        | Linting e análise estática | Configuração rigorosa    |
-| [Prettier](https://prettier.io/)                     | Formatação de código       | Padrões consistentes     |
-| [EditorConfig](https://editorconfig.org/)            | Configuração de editores   | Padronização de ambiente |
-| [Lefthook](https://github.com/evilmartians/lefthook) | Git hooks                  | Automação de qualidade   |
+| Tool                                                | Purpose                    | Configuration           |
+| --------------------------------------------------- | -------------------------- | ----------------------- |
+| [ESLint](https://eslint.org/)                       | Linting & static analysis  | Strict configuration    |
+| [Prettier](https://prettier.io/)                    | Code formatting            | Consistent standards    |
+| [EditorConfig](https://editorconfig.org/)           | Editor settings            | Standardized workspace  |
+| [Lefthook](https://github.com/evilmartians/lefthook)| Git hooks                  | Automated code quality  |
 
-### **🧪 Testes & Documentação**
+### **🧪 Testing & Documentation**
 
-| Ferramenta                                            | Tipo                  | Descrição                        |
-| ----------------------------------------------------- | --------------------- | -------------------------------- |
-| [Vitest](https://vitest.dev/)                         | Testes unitários      | Framework rápido e moderno       |
-| [React Testing Library](https://testing-library.com/) | Testes de componentes | Foco em comportamento do usuário |
-| [Playwright](https://playwright.dev/)                 | Testes E2E            | Automação de navegadores         |
-| [Storybook](https://storybook.js.org/)                | Documentação          | Componentes isolados             |
+| Tool                                                 | Type                  | Description                      |
+| ---------------------------------------------------- | --------------------- | -------------------------------- |
+| [Vitest](https://vitest.dev/)                        | Unit tests            | Fast, modern test framework      |
+| [React Testing Library](https://testing-library.com/)| Component tests       | Focuses on user behavior         |
+| [Playwright](https://playwright.dev/)                | E2E tests             | Browser automation               |
+| [Storybook](https://storybook.js.org/)               | Documentation         | Isolated components              |
 
-### **🗄️ Banco de Dados & ORM**
+### **🗄️ Database & ORM**
 
-| Tecnologia                                       | Propósito            | Características         |
-| ------------------------------------------------ | -------------------- | ----------------------- |
-| [DrizzleORM](https://orm.drizzle.team/)          | ORM TypeScript-first | Type-safe, performático |
-| [PGLite](https://github.com/electric-sql/pglite) | PostgreSQL in-memory | Desenvolvimento local   |
+| Technology                                      | Purpose                | Features                  |
+| ------------------------------------------------| ---------------------- | ------------------------- |
+| [DrizzleORM](https://orm.drizzle.team/)         | Typesafe ORM           | Type-safe, performant     |
+| [PGLite](https://github.com/electric-sql/pglite)| In-memory PostgreSQL   | Local development         |
 
-### **📊 Analytics & Monitoramento**
+### **📊 Analytics & Monitoring**
 
-| Serviço                                  | Funcionalidade            | Integração   |
-| ---------------------------------------- | ------------------------- | ------------ |
-| [PostHog](https://posthog.com/)          | Analytics e feature flags | Automática   |
-| [Sentry](https://sentry.io/)             | Monitoramento de erros    | Real-time    |
-| [Better Stack](https://betterstack.com/) | Logs e observabilidade    | Centralizada |
+| Service                                  | Functionality              | Integration     |
+| ----------------------------------------- | ------------------------- | -------------- |
+| [PostHog](https://posthog.com/)           | Analytics & Feature Flags | Automatic      |
+| [Sentry](https://sentry.io/)              | Error monitoring          | Real-time      |
+| [Better Stack](https://betterstack.com/)   | Logs & Observability      | Centralized    |
 
-### **🔒 Segurança & Performance**
+### **🔒 Security & Performance**
 
-| Ferramenta                        | Proteção                | Benefício           |
-| --------------------------------- | ----------------------- | ------------------- |
-| [Arcjet](https://arcjet.com/)     | Proteção contra bots    | Segurança proativa  |
-| [Checkly](https://checklyhq.com/) | Monitoramento de uptime | Disponibilidade     |
-| [Codecov](https://codecov.io/)    | Cobertura de testes     | Qualidade de código |
+| Tool                         | Protection                | Benefit            |
+| ---------------------------- | ------------------------- | ------------------ |
+| [Arcjet](https://arcjet.com/)| Bot protection            | Proactive security |
+| [Checkly](https://checklyhq.com/)| Uptime monitoring      | Availability       |
+| [Codecov](https://codecov.io/)| Test coverage            | Code quality       |
 
-## 🎯 Qualidade de Código Automatizada
+## 🎯 Automated Code Quality
 
-Este boilerplate implementa um sistema completo de qualidade de código que garante **padronização automática** e **correção contínua** de todo o código do projeto, incluindo arquivos de teste.
+This boilerplate implements a complete code quality system ensuring **automatic standardization** and **continuous correction** of all code in the project, including test files.
 
-### **🛠️ Ferramentas de Qualidade**
+### **🛠️ Quality Tools**
 
 #### **Prettier**
 
-- ✅ **Formatação automática** de todos os arquivos
-- ✅ **Padrões consistentes** definidos no `.prettierrc`
-- ✅ **Configuração global** para espaçamento, aspas, ponto e vírgula
-- ✅ **Integração com editores** para formatação ao salvar
-- ✅ **Comando manual**: `npm run format`
+- ✅ **Automatic code formatting**
+- ✅ **Consistent standards** via `.prettierrc`
+- ✅ **Global config** for spacing, quotes, semicolons
+- ✅ **Editor integration** for format on save
+- ✅ **Manual command**: `npm run format`
 
 #### **ESLint**
 
-- ✅ **Análise estática** de código JavaScript/TypeScript
-- ✅ **Detecção de erros** e boas práticas
-- ✅ **Plugins especializados** para React, TypeScript, Tailwind
-- ✅ **Configuração rigorosa** para qualidade máxima
-- ✅ **Correção automática**: `npm run lint:fix`
+- ✅ **Static code analysis** for JS/TS
+- ✅ **Error detection** and best practices
+- ✅ **Specialized plugins** for React, TypeScript, Tailwind
+- ✅ **Strict configuration** for maximum quality
+- ✅ **Auto-fix:** `npm run lint:fix`
 
 #### **EditorConfig**
 
-- ✅ **Padronização de editores** em todos os sistemas
-- ✅ **Configuração consistente** de recuos e finais de linha
-- ✅ **Suporte universal** para diferentes IDEs
-- ✅ **Configuração automática** via `.editorconfig`
+- ✅ **Editor standardization** on all systems
+- ✅ **Consistent config** for indents and EOLs
+- ✅ **Universal support** for various IDEs
+- ✅ **Automatic config** via `.editorconfig`
 
 #### **Lefthook (Git Hooks)**
 
-- ✅ **Automação de qualidade** antes de cada commit
-- ✅ **Execução automática** de lint e format
-- ✅ **Verificação de tipos** TypeScript
-- ✅ **Prevenção de commits** com código não padronizado
+- ✅ **Automated quality** before each commit
+- ✅ **Automatic lint/format execution**
+- ✅ **TypeScript type checks**
+- ✅ **Prevent commiting non-standard code**
 
-### **🚀 Benefícios da Automação**
+### **🚀 Automation Benefits**
 
-#### **Para o Desenvolvedor**
+#### **For Developers**
 
-- ⚡ **Zero configuração** manual de formatação
-- 🔄 **Correção automática** ao salvar arquivos
-- 🚫 **Impossibilidade** de commitar código mal formatado
-- 📈 **Produtividade aumentada** com menos preocupações
+- ⚡ **Zero manual configuration** needed for formatting
+- 🔄 **Autosave correction** on file changes
+- 🚫 **Impossible** to commit non-standard code
+- 📈 **Increased productivity** with less overhead
 
-#### **Para a Equipe**
+#### **For Teams**
 
-- 🎯 **Padrões consistentes** em todo o projeto
-- 🔍 **Detecção precoce** de problemas de qualidade
-- 🚀 **Onboarding simplificado** para novos desenvolvedores
-- 📊 **Métricas de qualidade** automatizadas
+- 🎯 **Consistent standards** across the codebase
+- 🔍 **Early detection** of quality issues
+- 🚀 **Simplified onboarding** for new devs
+- 📊 **Automated quality metrics**
 
-#### **Para o Projeto**
+#### **For the Project**
 
-- 🛡️ **Prevenção de bugs** através de análise estática
-- 📝 **Código legível** e bem estruturado
-- 🔧 **Manutenibilidade** aumentada
-- 🚀 **Performance otimizada** com boas práticas
+- 🛡️ **Bug prevention** via static analysis
+- 📝 **Readable, well-structured code**
+- 🔧 **Increased maintainability**
+- 🚀 **Optimized performance** via best practices
 
-### **📋 Como Funciona na Prática**
+### **📋 How It Works in Practice**
 
-1. **Durante o Desenvolvimento**:
-   - Editor formata automaticamente ao salvar
-   - ESLint mostra erros em tempo real
-   - TypeScript verifica tipos continuamente
+1. **During development:**
+   - Editor auto-formats on save
+   - ESLint shows errors in real-time
+   - TypeScript checks types continuously
 
-2. **Antes do Commit**:
-   - Lefthook executa lint e format automaticamente
-   - Verificação de tipos TypeScript
-   - Bloqueio de commit se houver problemas
+2. **Before commit:**
+   - Lefthook auto-runs lint and format tasks
+   - TypeScript type check
+   - Blocks commits with errors
 
-3. **No CI/CD**:
-   - Verificação de qualidade em pull requests
-   - Relatórios de cobertura de testes
-   - Análise de segurança automatizada
+3. **In CI/CD:**
+   - Quality verification on pull requests
+   - Test coverage reports
+   - Automated security analysis
 
-### **🔧 Configuração Personalizada**
+### **🔧 Custom Configuration**
 
-Todas as ferramentas podem ser configuradas através dos arquivos:
+All tools can be configured through these files:
 
-- `.prettierrc` - Configuração do Prettier
-- `.eslintrc.js` - Regras do ESLint
-- `.editorconfig` - Configuração de editores
-- `lefthook.yml` - Hooks do Git
+- `.prettierrc` - Prettier settings
+- `.eslintrc.js` - ESLint rules
+- `.editorconfig` - Editor configs
+- `lefthook.yml` - Git hooks
 
-## 🚀 Como começar
+## 🚀 Getting Started
 
-### **Pré-requisitos**
+### **Prerequisites**
 
 - Node.js 18+
-- npm ou yarn
+- npm or yarn
 - Git
 
-### **Instalação**
+### **Installation**
 
-1. **Clone o repositório**:
+1. **Clone the repository:**
 
 ```bash
 git clone https://github.com/aqua9/boilerplate_aqua9.git
 cd boilerplate_aqua9
 ```
 
-2. **Instale as dependências**:
+2. **Install dependencies:**
 
 ```bash
 npm install
-# ou
+# or
 yarn install
 ```
 
-3. **Configure as variáveis de ambiente**:
+3. **Configure environment variables:**
 
 ```bash
 cp .env.example .env.local
 ```
 
-4. **Inicie o servidor de desenvolvimento**:
+4. **Start the dev server:**
 
 ```bash
 npm run dev
-# ou
+# or
 yarn dev
 ```
 
-5. **Abra [http://localhost:3000](http://localhost:3000)** no seu navegador para ver o resultado.
+5. **Open [http://localhost:3000](http://localhost:3000)** in your browser to see the result.
 
-A página atualiza automaticamente conforme você edita os arquivos.
+The page will reload as you edit files.
 
-## 📋 Comandos Disponíveis
+## 📋 Available Commands
 
-### **🚀 Desenvolvimento**
+### **🚀 Development**
 
-| Comando         | Descrição                   | Uso                   |
-| --------------- | --------------------------- | --------------------- |
-| `npm run dev`   | Servidor de desenvolvimento | `localhost:3000`      |
-| `npm run build` | Build de produção           | Otimizado para deploy |
-| `npm run start` | Servidor de produção        | Teste local do build  |
+| Command          | Description                | Usage               |
+| ---------------- | ------------------------- | ------------------- |
+| `npm run dev`    | Dev server                | `localhost:3000`    |
+| `npm run build`  | Production build          | Optimized for deploy|
+| `npm run start`  | Production server         | Local build testing |
 
-### **🔧 Qualidade de Código**
+### **🔧 Code Quality**
 
-| Comando                | Ação                | Resultado              |
-| ---------------------- | ------------------- | ---------------------- |
-| `npm run lint`         | Análise estática    | Relatório de problemas |
-| `npm run lint:fix`     | Correção automática | Código limpo           |
-| `npm run format`       | Formatação          | Padrões consistentes   |
-| `npm run format:check` | Verificação         | Validação de formato   |
+| Command                 | Action               | Result             |
+| ----------------------- | ------------------- | ------------------ |
+| `npm run lint`          | Static analysis     | Problem report     |
+| `npm run lint:fix`      | Auto-fix            | Clean code         |
+| `npm run format`        | Formatting          | Consistent code    |
+| `npm run format:check`  | Format check        | Validates style    |
 
-### **🧪 Testes**
+### **🧪 Tests**
 
-| Comando                 | Tipo       | Descrição                |
-| ----------------------- | ---------- | ------------------------ |
-| `npm run test`          | Unitários  | Execução completa        |
-| `npm run test:watch`    | Unitários  | Modo desenvolvimento     |
-| `npm run test:e2e`      | End-to-end | Automação de navegadores |
-| `npm run test:coverage` | Cobertura  | Relatório detalhado      |
+| Command                 | Type        | Description            |
+| ----------------------- | ----------- | ---------------------- |
+| `npm run test`          | Unit        | Full test run          |
+| `npm run test:watch`    | Unit        | Dev mode (watch)       |
+| `npm run test:e2e`      | End-to-end  | Browser automation     |
+| `npm run test:coverage` | Coverage    | Detailed report        |
 
-### **📚 Documentação**
+### **📚 Documentation**
 
-| Comando                   | Ambiente        | Porta            |
-| ------------------------- | --------------- | ---------------- |
-| `npm run storybook`       | Desenvolvimento | `localhost:6006` |
-| `npm run build-storybook` | Produção        | Build estático   |
+| Command                  | Environment      | Port              |
+| ------------------------ | ----------------| ----------------- |
+| `npm run storybook`      | Development     | `localhost:6006`  |
+| `npm run build-storybook`| Production      | Static build      |
 
-### **✅ Verificação**
+### **✅ Validation**
 
-| Comando              | Verificação  | Benefício      |
-| -------------------- | ------------ | -------------- |
-| `npm run type-check` | TypeScript   | Tipos corretos |
-| `npm run check-deps` | Dependências | Código limpo   |
+| Command               | Check        | Benefit             |
+| --------------------- | ------------| ------------------- |
+| `npm run type-check`  | TypeScript  | Correct types       |
+| `npm run check-deps`  | Dependencies| Clean dependencies  |
 
-## 📚 Recursos e Documentação
+## 📚 Resources & Documentation
 
-### **📖 Documentação Oficial**
+### **📖 Official Documentation**
 
-| Recurso          | Descrição                             | Link                                             |
-| ---------------- | ------------------------------------- | ------------------------------------------------ |
-| **Next.js**      | Framework React com App Router        | [Documentação](https://nextjs.org/docs)          |
-| **React**        | Biblioteca JavaScript para interfaces | [Documentação](https://react.dev/)               |
-| **TypeScript**   | Tipagem estática para JavaScript      | [Handbook](https://www.typescriptlang.org/docs/) |
-| **Tailwind CSS** | Framework CSS utility-first           | [Documentação](https://tailwindcss.com/docs)     |
+| Resource          | Description                           | Link                                            |
+| ----------------- | ------------------------------------- | ----------------------------------------------- |
+| **Next.js**       | React framework with App Router       | [Docs](https://nextjs.org/docs)                 |
+| **React**         | JavaScript library for UIs            | [Docs](https://react.dev/)                      |
+| **TypeScript**    | Static typing for JavaScript          | [Handbook](https://www.typescriptlang.org/docs/) |
+| **Tailwind CSS**  | Utility-first CSS framework           | [Docs](https://tailwindcss.com/docs)            |
 
-### **🏢 Recursos da Aqua9**
+### **🏢 Aqua9 Resources**
 
-| Recurso          | Descrição                   | Link                                                             |
-| ---------------- | --------------------------- | ---------------------------------------------------------------- |
-| **Site Oficial** | Visite nosso site           | [aqua9.com.br](https://aqua9.com.br)                             |
-| **GitHub**       | Nossos projetos open source | [github.com/aqua9](https://github.com/aqua9)                     |
-| **Contato**      | Entre em contato conosco    | [contato@aqua9.com.br](mailto:contato@aqua9.com.br)              |
-| **LinkedIn**     | Siga nossa empresa          | [linkedin.com/company/aqua9](https://linkedin.com/company/aqua9) |
+| Resource          | Description                   | Link                                                     |
+| ----------------- | -----------------------------| -------------------------------------------------------- |
+| **Official Site** | Visit our site                | [aqua9.com.br](https://aqua9.com.br)                     |
+| **GitHub**        | Our open-source projects      | [github.com/aqua9](https://github.com/aqua9)             |
+| **Contact**       | Get in touch                  | [contato@aqua9.com.br](mailto:contato@aqua9.com.br)      |
+| **LinkedIn**      | Follow us                     | [linkedin.com/company/aqua9](https://linkedin.com/company/aqua9) |
 
-### **🛠️ Ferramentas Utilizadas**
+### **🛠️ Used Tools**
 
-| Ferramenta     | Categoria                   | Documentação                          |
-| -------------- | --------------------------- | ------------------------------------- |
-| **DrizzleORM** | ORM TypeScript-first        | [Docs](https://orm.drizzle.team/docs) |
-| **Vitest**     | Framework de testes         | [Guide](https://vitest.dev/guide/)    |
-| **Storybook**  | Documentação de componentes | [Docs](https://storybook.js.org/docs) |
-| **PostHog**    | Analytics e feature flags   | [Docs](https://posthog.com/docs)      |
-| **Sentry**     | Monitoramento de erros      | [Docs](https://docs.sentry.io/)       |
-| **Arcjet**     | Proteção de segurança       | [Docs](https://docs.arcjet.com/)      |
+| Tool           | Category                  | Documentation                         |
+| -------------- | ------------------------- | -------------------------------------- |
+| **DrizzleORM** | TypeScript-first ORM      | [Docs](https://orm.drizzle.team/docs)  |
+| **Vitest**     | Test framework            | [Guide](https://vitest.dev/guide/)     |
+| **Storybook**  | Component documentation   | [Docs](https://storybook.js.org/docs)  |
+| **PostHog**    | Analytics & feature flags | [Docs](https://posthog.com/docs)       |
+| **Sentry**     | Error monitoring          | [Docs](https://docs.sentry.io/)        |
+| **Arcjet**     | Security protection       | [Docs](https://docs.arcjet.com/)       |
 
-## 🚀 Deploy e Produção
+## 🚀 Deploy & Production
 
-### **☁️ Plataformas Recomendadas**
+### **☁️ Recommended Platforms**
 
-#### **Vercel (Recomendado)**
+#### **Vercel (Recommended)**
 
-A forma mais fácil e otimizada de fazer deploy de aplicações Next.js.
+The easiest, most optimized way to deploy Next.js apps.
 
 ```bash
-# Deploy com Vercel CLI
+# Deploy with Vercel CLI
 npm i -g vercel
 vercel
 
-# Ou conecte seu repositório GitHub
+# Or connect your GitHub repository
 # https://vercel.com/new
 ```
 
-**Vantagens:**
+**Advantages:**
 
-- ⚡ Deploy automático a cada push
-- 🔧 Configuração zero
-- 📊 Analytics integrados
-- 🌍 CDN global
-- 🔒 SSL automático
+- ⚡ Auto deploy on every push
+- 🔧 Zero configuration
+- 📊 Built-in analytics
+- 🌍 Global CDN
+- 🔒 Automatic SSL
 
-#### **Outras Opções**
+#### **Other Options**
 
-| Plataforma       | Tipo      | Características               |
+| Platform         | Type      | Features                      |
 | ---------------- | --------- | ----------------------------- |
-| **Netlify**      | PaaS      | Suporte nativo ao Next.js     |
-| **Railway**      | PaaS      | Deploy simples e rápido       |
-| **AWS Amplify**  | Cloud     | Para projetos empresariais    |
-| **Docker**       | Container | Para ambientes personalizados |
-| **DigitalOcean** | VPS       | Controle total do servidor    |
+| **Netlify**      | PaaS      | Native Next.js support        |
+| **Railway**      | PaaS      | Simple, fast deploy           |
+| **AWS Amplify**  | Cloud     | For enterprise projects       |
+| **Docker**       | Container | For custom environments       |
+| **DigitalOcean** | VPS       | Full server control           |
 
-### **🔧 Configuração de Produção**
+### **🔧 Production Configuration**
 
-#### **Variáveis de Ambiente**
+#### **Environment Variables**
 
 ```bash
 # .env.production
-NEXT_PUBLIC_APP_URL=https://seu-dominio.com
+NEXT_PUBLIC_APP_URL=https://your-domain.com
 DATABASE_URL=postgresql://...
 NEXT_PUBLIC_POSTHOG_KEY=phc_...
 SENTRY_DSN=https://...
 ```
 
-#### **Otimizações Recomendadas**
+#### **Recommended Optimizations**
 
-- ✅ **Compressão**: Gzip/Brotli habilitados
-- ✅ **Cache**: Headers otimizados
-- ✅ **Imagens**: Otimização automática
-- ✅ **Bundle**: Code splitting automático
+- ✅ **Compression**: Enable Gzip/Brotli
+- ✅ **Caching**: Optimized headers
+- ✅ **Images**: Automatic optimization
+- ✅ **Bundle**: Automatic code splitting
 
-## 🤝 Contribuição
+## 🤝 Contributing
 
-Contribuições são muito bem-vindas! Este projeto é mantido pela **Aqua9** e aceitamos contribuições da comunidade.
+Contributions are welcome! This project is maintained by **Aqua9** and we accept community contributions.
 
-### **📋 Como Contribuir**
+### **📋 How to Contribute**
 
-1. **Fork o projeto**
-2. **Crie uma branch** para sua feature (`git checkout -b feature/AmazingFeature`)
-3. **Commit suas mudanças** (`git commit -m 'Add some AmazingFeature'`)
-4. **Push para a branch** (`git push origin feature/AmazingFeature`)
-5. **Abra um Pull Request**
+1. **Fork the project**
+2. **Create a branch** for your feature (`git checkout -b feature/AmazingFeature`)
+3. **Commit your changes** (`git commit -m 'Add some AmazingFeature'`)
+4. **Push to the branch** (`git push origin feature/AmazingFeature`)
+5. **Open a Pull Request**
 
-### **📝 Padrões de Contribuição**
+### **📝 Contribution Guidelines**
 
-- ✅ **Código limpo** e bem documentado
-- ✅ **Testes** para novas funcionalidades
-- ✅ **TypeScript** para tipagem adequada
-- ✅ **Commits semânticos** seguindo Conventional Commits
-- ✅ **Pull requests** com descrição clara
+- ✅ **Clean, well-documented code**
+- ✅ **Tests** for new features
+- ✅ **TypeScript** for proper typing
+- ✅ **Semantic commits** following Conventional Commits
+- ✅ **Pull requests** with clear description
 
-### **🐛 Reportando Bugs**
+### **🐛 Reporting Bugs**
 
-Se você encontrou um bug, por favor:
+If you encounter a bug, please:
 
-1. Verifique se já não foi reportado
-2. Use o template de issue
-3. Inclua passos para reproduzir
-4. Adicione screenshots se relevante
+1. Check if it's already reported
+2. Use the issue template
+3. Include steps to reproduce
+4. Add screenshots if relevant
 
-## 📄 Licença
+## 📄 License
 
-Este projeto está licenciado sob a **MIT License** - veja o arquivo [LICENSE](LICENSE) para detalhes.
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
-### **📋 Termos da Licença**
+### **📋 License Terms**
 
-- ✅ **Uso comercial** permitido
-- ✅ **Modificação** permitida
-- ✅ **Distribuição** permitida
-- ✅ **Uso privado** permitido
-- ✅ **Sem garantias** de funcionamento
+- ✅ **Commercial use** allowed
+- ✅ **Modification** allowed
+- ✅ **Distribution** allowed
+- ✅ **Private use** allowed
+- ✅ **No warranty**
 
 ---
 
 <div align="center">
 
-**Desenvolvido com ❤️ pela [Aqua9](https://aqua9.com.br)**
+**Developed with ❤️ by [Aqua9](https://aqua9.com.br)**
 
 [![Website](https://img.shields.io/badge/Website-aqua9.com.br-blue?style=flat-square)](https://aqua9.com.br)
 [![Email](https://img.shields.io/badge/Email-contato@aqua9.com.br-red?style=flat-square)](mailto:contato@aqua9.com.br)

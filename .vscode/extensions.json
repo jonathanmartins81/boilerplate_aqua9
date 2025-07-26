@@ -1,0 +1,58 @@
+{
+  "recommendations": [
+    // ===== EXTENSÕES ESSENCIAIS =====
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "bradlc.vscode-tailwindcss",
+    "ms-vscode.vscode-typescript-next",
+
+    // ===== EXTENSÕES DO REACT/NEXT.JS =====
+    "ms-vscode.vscode-react-native",
+    "formulahendry.auto-rename-tag",
+    "christian-kohler.path-intellisense",
+    "ms-vscode.vscode-json",
+
+    // ===== EXTENSÕES DE TESTES =====
+    "orta.vscode-jest",
+    "ms-vscode.vscode-js-debug",
+    "ms-vscode.vscode-js-debug-companion",
+
+    // ===== EXTENSÕES DE GIT =====
+    "eamodio.gitlens",
+    "mhutchie.git-graph",
+
+    // ===== EXTENSÕES DE PRODUTIVIDADE =====
+    "ms-vscode.vscode-typescript-next",
+    "ms-vscode.vscode-json",
+    "bradlc.vscode-tailwindcss",
+    "formulahendry.auto-rename-tag",
+    "christian-kohler.path-intellisense",
+    "ms-vscode.vscode-eslint",
+    "esbenp.prettier-vscode",
+
+    // ===== EXTENSÕES DE TEMAS E ÍCONES =====
+    "pkief.material-icon-theme",
+    "zhuangtongfa.material-theme",
+    "dracula-theme.theme-dracula",
+
+    // ===== EXTENSÕES DE SNIPPETS =====
+    "dsznajder.es7-react-js-snippets",
+    "ms-vscode.vscode-typescript-next",
+
+    // ===== EXTENSÕES DE DEBUGGING =====
+    "ms-vscode.vscode-js-debug",
+    "ms-vscode.vscode-js-debug-companion",
+
+    // ===== EXTENSÕES DE PERFORMANCE =====
+    "ms-vscode.vscode-json",
+    "ms-vscode.vscode-typescript-next",
+
+    // ===== EXTENSÕES DE ACESSIBILIDADE =====
+    "ms-vscode.vscode-json",
+    "ms-vscode.vscode-typescript-next"
+  ],
+  "unwantedRecommendations": [
+    "ms-vscode.vscode-typescript",
+    "ms-vscode.vscode-javascript"
+  ]
+}
